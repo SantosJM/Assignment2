@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 2</title>
+        <script>
+// ================ PART 1: STRINGS =========================
+
+//1 Create an application that prompts the user for their name.
+            // var name = prompt("What's your name, bruh?");
+            // alert(name.length);
+
+
+//2 prompts the user for their name. Then, prompt the user for a numeric value so that they can find the letter in the string based on the number they specify.
+            // var name = prompt("What's your name, bruh?");
+            // var num = prompt("Based on the number of letters that are in your name, enter a number and this application will find that letter in the string!");
+            // alert(name.charAt(num));
+
+
+//3 Create an application that prompts the user for their first name. Then, prompt the user for their last name using a second prompt. Use the alert method to display the text "Your name is: " along with the result of the first name and last name concatenated together.
+
+            // var firstName = prompt("What's your first name, bruh?");
+            // var lastName = prompt("What's your last name, bruh?");
+            // alert("Your name is: " + firstName + " " + lastName);
+
+
+//4 Create an application that stores the text “The quick brown fox jumps over the lazy dog” within a variable. Then, find and display within an alert the index of the word “fox”.
+
+            // var x = "The quick brown fox jumps over the lazy dog";
+            // alert(x.indexOf("fox"));
+
+
+//5 Create an application that stores the text “The quick brown fox jumps over the lazy fox” within a variable. Then, find and display within an alert the index of the last instance of the word “fox”
+
+            // var x = "The quick brown fox jumps over the lazy dog";
+            // alert(x.lastIndexOf("fox"));
+
+
+//6 Create an application that stores the text “The quick brown fox jumped over the lazy dog” within a variable. Then, prompt the user for their full name. Then, replace the text “the lazy dog” in the variable with the name that the user enters within the prompt.
+
+            // var x = "The quick brown fox jumps over the lazy dog";
+            // var fullName = prompt("What is your full name, bruh?");
+            // alert(x.replace("the lazy dog", fullName));
+
+
+//7 Create an application that stores the text “The quick brown fox jumps over the lazy dog” within a variable. Then, prompt the user for a word. Next, search for the word within the string that the user enters into the prompt.
+
+            // var x = "The quick brown fox jumps over the lazy dog";
+            // var word = prompt("Type in a word");
+            // alert(x.search(word));
+
+
+//8 Create an application that stores the text “The quick brown fox jumps over the lazy dog” within a variable called old_string. Then, use slice(), substr(), or substring() to extract the words “the lazy dog” from the old_string variable and store that result in a second variable called new_string.
+
+            // var old_string = "The quick brown fox jumps over the lazy dog";
+            // var new_string = old_string.slice(31, 43);
+            // alert(new_string);
+
+
+//9 Use the alert method to display the lowercase result of the variable once the space has been trimmed off
+
+            // var x = "        THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG        ";
+            // var x = x.trim();
+            // alert(x.toLowerCase());
+
+
+//10 The user clearly forgot to capitalize the first letter in the sentence. Programmatically capitalize the first letter in the sentence and display the result in an alert.
+
+            // var x = "the quick brown fox jumps over the lazy dog";
+            // var y = x.charAt(0).toUpperCase();
+            // alert(x.replace("t", y));
+
+
+// ================ PART 2 ===============
+
+// ================ Part 1 - MATH & FUNCTIONS =============
+
+// 1 Create an application that prompts the user for a number. Regardless of whether they enter a negative or positive number, make sure to display the positive version of that number in the console window.
+
+            // var userNumber = prompt("Enter a number.");
+            // console.log(Math.abs(userNumber));
+
+//2 Create an application that prompts the user for a floating point value (decimal).Store the result of that input in a variable and then ROUND IT UP to the nearest whole number.
+
+            // var floatingNum = prompt("Enter a number with a decimal point.");
+            // console.log(Math.ceil(floatingNum));
+
+//3 Create an application that prompts the user for a floating point value (decimal). Store the result of that input in a variable and then ROUND IT DOWN to the nearest whole number.
+
+            // var floatingNum = prompt("Enter a number with a decimal point.");
+            // console.log(Math.floor(floatingNum));
+
+//4 Create an application that prompts the user for 5 numbers. Ask them to comma delimit each number so you get 1,2,3,4,5 for example.
+
+            // var x = prompt("Enter 5 numbers, SEPARATE them with COMMAS with a space after each number.");
+            // var y = parseInt(x);
+            // console.log(Math.min(y), Math.max(y));
+
+
+//5 Create an application that prompts the user for a number. Now find the square root of that number and display the result within a console window.
+
+            // var userNumber = prompt("Enter a number.");
+            // console.log(Math.sqrt(userNumber));
+
+
+// ================ Part 2 - DATE & FUNCTIONS =============
+
+//6 Create an application that gets the current date.
+
+            // var currentDate = new Date();
+            // console.log(currentDate);
+
+//7 Create an application that gets the number of days in a month.
+
+            // var currentDate = new Date();
+            // console.log(currentDate.getDate());
+
+//8 Create an application that gets the month name from a particular date.
+
+            // var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            // var currentDate = new Date();
+            // var theMonth = currentDate.getMonth();
+            // console.log(months[theMonth]);
+
+//9 Create an application that tests whether a date is a weekend.
+
+            // var theDate = new Date();
+            // console.log(theDate == 0 && theDate == 6);
+
+
+//10 Create an application that gets yesterday’s day of the week.
+
+            // var currentDate = new Date();
+            // var yesterday = new Date(currentDate);
+            // yesterday.setDate(currentDate.getDate() - 1);
+            // console.log(yesterday);
+
+//11 Create an application that gets the current day of the week.
+
+            // var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            // var theDate = new Date();
+            // var today = theDate.getDay();
+            // console.log(days[today].charAt(0));
+
+
+// ================ Part 3 - LOGIC & LOOPING =============
+
+            //12 Create an application that accepts two integers within two separate prompts. Then, display only the larger of the two within the console window.
+
+            // var int1 = prompt("Enter an integer.");
+            // var int2 = prompt("Enter another integer.");
+            // console.log(Math.max(int1, int2));
+
+            //13 Create an application that records the marks for the following five students.
+
+            // var ursula = 80;
+            // var paul = 77;
+            // var henry = 88;
+            // var tabitha = 95;
+            // var lucy = 68;
+            // if
+
+// ================ Part 4 - HITCHHIKER =============
+
+// 1 Begin your application by asking the user if they’re ready to play your game. If they are, display the message “Awesome, our hero is waiting!”  If they’re not, display the message “Too bad, we’re going to play anyway because our hero desperately needs your help!”
+
+             // var yes = confirm("Are you ready to play Hitchhiker's Guide to the Galaxy?");
+            // if (yes) {
+            //    alert("Awesome, our hero is waiting!");
+            // } else {
+            //    alert("Too bad, we're going to play anyways because our hero desperately needs your help!");
+            // }
+
+
+// 2 Now, alert the user to the following scenario: “You are in a dark, dingy, and humid cave searching for the lost treasure of Captain Chingadera.
+
+            // alert("You are in a dark, dingy, and humid cave searching for the lost treasure of Captain Chingadera.\nYou are disoriented, lost, hungry and extremely thirsty.\nYou see a speck of light in the distance ahead of you, something shimmering to your right, and the sound of running water to your left.\nYour back is against the wall.");
+
+
+//3 Then prompt the user with the following message: “Which direction would you like to head (please enter forward, left, or right).”
+
+            // var direction = prompt("Which direction would you like to head (please enter forward, left, or right)?");
+
+//4 Use a switch statement to check for the literal string values forward, left, and right. If they choose forward, display the message “You walk about 100 yards and safely make your way out of the cave.”
+
+            //  switch (direction) {
+            //  case "forward":
+            //          alert("You walk about 100 yards and safely make your way out of the cave.");
+            //          break;
+            //  case "left":
+            //          alert("Your thirst has gotten the better of you. You trip on a rock, hit your head, and fall into a pool of water and drown!");
+            //          break;
+            //  case "right":
+            //          alert("You found the gold! You walk into a small room and see  thousands of gold coins, jewels, chalices, and more. You jump into the pile of gold in celebration and immediately a hidden door slams down and traps you in the room forever.");
+            //          break;
+            //  default:
+            //          alert("The ghost of Captain Chingadera has condemned you to eternal damnation and you shall now burn in the hot excoriation for lifeless lowlifes for not choosing the correct option….loser.");
+            // }
+
+//5 Finally, ask the user to rate your game on a scale of 1 to 10.
+
+            // var rateGame = prompt("Please rate our game on a scale of 1-10.");
+            // if (!isNaN(rateGame)) {
+            //    if (rateGame > 5 && rateGame <= 10) {
+            //        alert("Thank you, we will continue to make improvements to the game!");
+            //    } else if (rateGame > 0 && rateGame <= 5) {
+            //        alert("Whatever, you weren't very good at this game anyway!");
+            //    } else {
+            //        alert("You did not enter a valid number between 1 and 10!");
+            //    }
+            // } else {
+            //    alert("Yo! You did not enter a number!")
+            // }
+
+
+// ================ Part 5 - COIN FLIP =============
+
+// 1 Begin your application by creating a variable called coinFlip and set it equal to a random number. You will have to use a Math method to get this number.
+
+            // var coinFlip = Math.round(Math.random());
+
+//2 Prompt the user to select “Heads or Tails” and set the result to a new variable called choice.
+
+            // var choice = prompt("Select Heards or Tails").toLowerCase();
+
+// 3 Use a conditional to check the result of the coin flip. If it’s less than a certain number, it will be heads. If it’s greater than a certain number, it will be tails.
+
+            // if (coinFlip) {
+            // if (choice == "heads") {
+            //     alert("The flip was heads and you chose heads...you win!");
+            // } else {
+            //     alert("The flip was heads but you chose tails...you lose!");
+            // }
+            // } else {
+            //    if (choice == "heads") {
+            //        alert("The flip was tails but you chose heads...you lose!");
+            //    } else {
+            //        alert("The flip was tails and you chose tails...you win!");
+            //     }
+            // }
+
+
+// ================ Part 6 - COIN FLIP REDUX =============
+
+// Begin your application by declaring a variable called coinFlip. Do not assign the variable a number just yet.
+// Create a FOR LOOP that loops 10 times.
+
+            // var coinFlip;
+            // for (var i = 1; i <= 10; i++) {
+            //    coinFlip = Math.round(Math.random());
+            //    if (!coinFlip) {
+            //        console.log("Heads");
+            //    } else {
+            //        console.log("Tails");
+            //    }
+            // }
+
+
+// ================ Part 7 - COIN FLIP STREAK =============
+
+// Begin your application by declaring a variable called coinFlip. Do not assign the variable a number just yet.
+// Create a DO WHILE loop.
+
+            // var coinFlip;
+            // do {
+            //    coinFlip = Math.round(Math.random());
+            //    if (coinFlip) {
+            //        console.log("Heads");
+            //    } else {
+            //        console.log("You finally got Tails!");
+            //    }
+            // } while (coinFlip);
+
+
+// ================ Part 8 - LOOPING A TRIANGLE =============
+
+
+// ================ Part 9 - ODD OR EVEN =============
+
+
+
+
+        </script>
+    </head>
+
+    <script>
+
+    </script>
+
+    <body>
+        <h1>Assignment 2</h1>
+        <p>This is my second JavaScript application!</p>
+    </body>
+</html>
